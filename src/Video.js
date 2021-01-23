@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react';
+import VideoFooter from "./VideoFooter";
 import "./Video.css";
 
 
@@ -23,7 +24,8 @@ function Video() {
           loop
           onClick={onVideoPress}
           ref={videoRef}
-          src ="ash1.mp4"> </video> 
+          src ="ash1.mp4"> </video>
+          <VideoFooter /> 
           {/*< sidebar /> */}
            {/* <footer/> */}
         </div>
