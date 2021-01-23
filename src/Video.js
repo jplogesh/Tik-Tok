@@ -5,7 +5,10 @@ import "./Video.css";
 function Video() {
     return (
         <div className="video">
-          <h2>this is video</h2> 
+          <video className= "video__player"
+          src ="ins.mp4"> </video> 
+          {/*< sidebar /> */}
+           {/* <footer/> */}
         </div>
     );
 }
