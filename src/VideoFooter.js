@@ -8,21 +8,25 @@ function VideoFooter() {
         <div className="videoFooter">
          <div className="videoFooter__text">
            <h4>@Johnny Depp</h4>
+
              <p>Spread Love </p>
+           
+             
              <div className="videoFooter__ticker">
-             <AudiotrackIcon />
+              <AudiotrackIcon className = "videoFooter__icon" />
              <Ticker  mode="smooth" >
                 {({  index  }) => (
                  <>  
-                 <p>   wanderlust...</p>
+                 <p>Hello from a wanderlust...   </p>
                  </>
                 )}  
              </Ticker>
              </div>
         </div>
-        <img className = "videoFooter__record"
-        src="final.png" alt="J" />
-            </div>
+        
+                  <img className = "videoFooter__record" src="final.png" alt="J" />
+         
+         </div>
     );
 }
 
