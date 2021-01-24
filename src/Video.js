@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react';
 import VideoFooter from "./VideoFooter";
+import VideoSidebar from './VideoSidebar';
 import "./Video.css";
 
 
@@ -25,9 +26,11 @@ function Video() {
           onClick={onVideoPress}
           ref={videoRef}
           src ="ash1.mp4"> </video>
-          <VideoFooter /> 
-          {/*< sidebar /> */}
-           {/* <footer/> */}
+          <VideoFooter 
+          channel ="Johnny Depp" 
+          description="hello from wanderlust" 
+          song ="spread love make peace-jey " /> 
+          <VideoSidebar />
         </div>
     );
 }

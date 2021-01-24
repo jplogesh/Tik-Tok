@@ -3,13 +3,13 @@ import "./VideoFooter.css";
 import AudiotrackIcon from '@material-ui/icons/Audiotrack';
 import Ticker from "react-ticker"; 
 
-function VideoFooter() {
+function VideoFooter({channel, description, song }) {
     return (
         <div className="videoFooter">
          <div className="videoFooter__text">
-           <h4>@Johnny Depp</h4>
+           <h4>@{channel}</h4>
 
-             <p>Spread Love </p>
+             <p>{description} </p>
            
              
              <div className="videoFooter__ticker">
@@ -17,7 +17,7 @@ function VideoFooter() {
              <Ticker  mode="smooth" >
                 {({  index  }) => (
                  <>  
-                 <p>Hello from a wanderlust...   </p>
+                 <p>{song}...</p>
                  </>
                 )}  
              </Ticker>
