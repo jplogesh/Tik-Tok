@@ -1,16 +1,29 @@
 import React from 'react';
-import  "./VideoFooter.css";
+import "./VideoFooter.css";
+import AudiotrackIcon from '@material-ui/icons/Audiotrack';
+import Ticker from "react-ticker"; 
 
 function VideoFooter() {
     return (
-        <div className ="VideoFooter" >
-        <div className = "videoFooter__text">
-         <h3>@JohnnyDepp</h3>
-           <p> this is a description</p>
+        <div className="videoFooter">
+         <div className="videoFooter__text">
+           <h4>@Johnny Depp</h4>
+             <p>Spread Love </p>
+             <div className="videoFooter__ticker">
+             <AudiotrackIcon />
+             <Ticker  mode="smooth" >
+                {({  index  }) => (
+                 <>  
+                 <p>   wanderlust...</p>
+                 </>
+                )}  
+             </Ticker>
+             </div>
         </div>
-        <img div = "videoFooter__record" src="https://static.thenounproject.com/png/2722153-200.png" alt=""/>
-        </div>
-    )
+        <img className = "videoFooter__record"
+        src="final.png" alt="J" />
+            </div>
+    );
 }
 
-export default VideoFooter
+export default VideoFooter;
