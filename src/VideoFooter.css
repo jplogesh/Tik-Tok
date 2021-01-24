@@ -1,7 +1,7 @@
 .videoFooter{
     position: relative;
     color: cyan;
-    bottom: 80px;
+    bottom: 100px;
     display: flex;
     margin-left: 10px;
    padding-bottom: 10px;
@@ -13,8 +13,9 @@
    height: 50px;
    filter: invert(1);
     position: absolute;
-    bottom: 80px;
+    bottom: 90px;
     right: 0;
+    padding-right: 10px;
 }
 .videoFooter__icon {
 
@@ -29,7 +30,7 @@
 .videoFooter__ticker  > .ticker {
  height: fit-content;
  margin-left: 15px;
- width: 200%;
+ width: 210%;
 }
 @keyframes spinTheRecord {
     from {

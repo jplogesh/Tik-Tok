@@ -4,7 +4,15 @@ import VideoSidebar from './VideoSidebar';
 import "./Video.css";
 
 
-function Video() {
+function Video({
+  url,
+  channel,
+  description,
+  song,
+  likes,
+  messages,
+  shares,
+}) {
    
   const [playing, setPlaying] =useState(false);
   const videoRef=useRef(null);
@@ -25,12 +33,15 @@ function Video() {
           loop
           onClick={onVideoPress}
           ref={videoRef}
-          src ="ash1.mp4"> </video>
+          src ={url}> </video>
           <VideoFooter 
-          channel ="Johnny Depp" 
-          description="hello from wanderlust" 
-          song ="spread love make peace-jey " /> 
-          <VideoSidebar />
+          channel ={channel}
+          description={description} 
+          song ={song}/> 
+          <VideoSidebar 
+          likes ={likes} 
+          messages = {messages} 
+          shares = {shares} />
         </div>
     );
 }
