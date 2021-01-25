@@ -7,9 +7,9 @@ function VideoFooter({channel, description, song }) {
     return (
         <div className="videoFooter">
          <div className="videoFooter__text">
-           <h4>@{channel}</h4>
+           <h2>@ {channel}</h2>
 
-             <p>{description} </p>
+             <h4>{description} </h4>
            
              
              <div className="videoFooter__ticker">

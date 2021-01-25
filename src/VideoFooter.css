@@ -1,7 +1,7 @@
 .videoFooter{
     position: relative;
-    color: cyan;
-    bottom: 100px;
+    color:white;
+    bottom: 110px;
     display: flex;
     margin-left: 10px;
    padding-bottom: 10px;
@@ -30,7 +30,7 @@
 .videoFooter__ticker  > .ticker {
  height: fit-content;
  margin-left: 15px;
- width: 210%;
+ width: 200%;
 }
 @keyframes spinTheRecord {
     from {
