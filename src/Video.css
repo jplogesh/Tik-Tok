@@ -1,9 +1,10 @@
 .video {
     position: relative;
-   background-color: cornflowerblue;
+ background-color: cornflowerblue; 
     height: 100%;
     width: 80%;
     scroll-snap-align: start;
+    
 }
 .video__player{
      
@@ -12,3 +13,4 @@
     height: 100%;
     
 }
+

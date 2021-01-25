@@ -33,7 +33,7 @@ function Video({
           loop
           onClick={onVideoPress}
           ref={videoRef}
-          src ={url}> </video>
+          src = {url}> </video>
           <VideoFooter 
           channel ={channel}
           description={description} 

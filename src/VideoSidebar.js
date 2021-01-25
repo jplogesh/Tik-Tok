@@ -18,7 +18,7 @@ function VideoSidebar({ likes, shares, messages}) {
                  onClick={e => setLiked(false)}
                  /> 
              ): (
-                 <FavoriteBorder fontSize ="large"
+                 <FavoriteBorderIcon fontSize ="large"
                  onClick={e => setLiked(true)}
                  />
              )     
